@@ -1,0 +1,11 @@
+{
+    "name": "pr3",
+    "version": "1.0.0",
+    "description": "",
+    "author": "YanaOstashova",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.17.1",
+        "hbs": "^4.1.1"
+    }
+}
