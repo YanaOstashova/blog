@@ -1,0 +1,38 @@
+.check {
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -ms-line-clamp: 2;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    display: -webkit-box;
+    display: box;
+    word-wrap: break-word;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+    font-size: 15px;
+    line-height: 19px;
+}
+
+p {
+    font-family: Helvetica Neue, arial, sans-serif;
+}
+
+.blocktext {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+#follow {
+    margin: 0px;
+    background: e6eeee;
+    z-index: 2;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+.imgbox {
+    width: 600px;
+}
