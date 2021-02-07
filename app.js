@@ -28,6 +28,7 @@ app.get("/info/:id", (request, response) => {
     response.render("info", notes[0]);
 });
 
+/* Не работает, пока что...
 app.get("/admin/edit/:id", (request, response) => {
     const id = request.params.id;
     const file = fs.readFileSync("data/notes.json");
@@ -37,7 +38,7 @@ app.get("/admin/edit/:id", (request, response) => {
     if (notes.length > 0) note = notes[0];
 
     response.render("info", note);
-});
+}); */
 
 app.post("/admin/edit", (request, response) => {
     const editInfo = request.body;
