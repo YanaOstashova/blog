@@ -3,13 +3,11 @@ const fs = require("fs");
 var path = require('path');
 
 const app = express();
-const port = 2000;
 app.use(express.static(path.join(__dirname, 'public')));
 app.set("view engine", "hbs");
 
-app.listen(port, () => {
-    console.log(`App is running on http://localhost:${port}/`);
-});
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => console.log(`Listening on ${PORT}`))
 
 app.get("/", (request, response) => {
     const file = fs.readFileSync("data/notes.json");
